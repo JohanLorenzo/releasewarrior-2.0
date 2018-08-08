@@ -19,7 +19,7 @@ tasks:
         - >-
           git clone {{event.head.repo.url}} repo && cd repo && git config
           advice.detachedHead false && git checkout {{event.head.sha}} && pip3
-          install tox && tox || true
+          install tox && tox
     metadata:
       name: 'tox'
       description: 'tests and linting'
